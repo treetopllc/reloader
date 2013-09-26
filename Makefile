@@ -1,9 +1,7 @@
-REBAR ?= rebar
+# See LICENSE for licensing information.
 
-all: reloader
+PROJECT = reloader
 
-reloader:
-	$(REBAR) compile
+# Standard targets.
 
-clean:
-	$(REBAR) clean
+include erlang.mk
